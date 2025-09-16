@@ -60,7 +60,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
 
   @override
   Widget build(BuildContext context) {
-    final tabs = ['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4'];
+    final tabs = ['Bear', 'Bird', 'Sheep', 'Chick']; // ✅ Updated tab names
 
     return Scaffold(
       appBar: AppBar(
@@ -77,7 +77,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
       body: TabBarView(
         controller: _tabController,
         children: [
-          // Tab 1
+          // Cat Tab
           Container(
             color: Colors.black,
             padding: EdgeInsets.all(16),
@@ -114,7 +114,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
             ),
           ),
 
-          // Tab 2
+          // Dog Tab
           Container(
             color: Colors.black,
             child: Center(
@@ -135,7 +135,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
                         builder: (BuildContext context) {
                           return AlertDialog(
                             title: Text('Hello!'),
-                            content: Text('This is an alert dialog in Tab 2.'),
+                            content: Text('This is an alert dialog in the Dog tab.'),
                             actions: [
                               TextButton(
                                 onPressed: () => Navigator.of(context).pop(),
@@ -153,7 +153,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
             ),
           ),
 
-          // Tab 3 - UPDATED with description text
+          // Rabbit Tab
           Container(
             color: Colors.black,
             child: Center(
@@ -177,7 +177,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
                   ),
                   SizedBox(height: 10),
                   Text(
-                    'Tab 3',
+                    'Rabbit',
                     style: TextStyle(
                       fontSize: 24,
                       color: Colors.white,
@@ -188,7 +188,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
             ),
           ),
 
-          // Tab 4
+          // Fox Tab
           Container(
             color: Colors.black,
             child: Column(
